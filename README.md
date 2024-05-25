@@ -8,22 +8,22 @@
 <body>
     <h1>Clean Architecture Project README</h1>
 
-    <p>This repository contains a project built using the Clean Architecture pattern. Clean Architecture is an architectural approach that promotes separation of concerns and maintainability by structuring applications into distinct layers with well-defined responsibilities.</p>
+   This repository contains a project built using the Clean Architecture pattern. Clean Architecture is an architectural approach that promotes separation of concerns and maintainability by structuring applications into distinct layers with well-defined responsibilities.
 
     <h2>Overview</h2>
 
-    <p>The project is structured into several layers, each with its own set of responsibilities:</p>
+    The project is structured into several layers, each with its own set of responsibilities:
 
-    <ol>
-        <li><strong>Domain Layer:</strong> Contains the core business logic and domain entities of the application. It is independent of any external frameworks or libraries.</li>
-        <li><strong>Application Layer:</strong> Implements use cases and orchestrates the flow of data between the domain layer and the infrastructure layer. It is responsible for business logic implementation and interacts with external systems via interfaces.</li>
-        <li><strong>Infrastructure Layer:</strong> Provides implementations for interacting with external systems such as databases, web services, or external APIs. It contains concrete implementations of repositories, data access objects, and other infrastructure concerns.</li>
-        <li><strong>Presentation Layer:</strong> Handles user interface logic and presentation concerns. This can include web controllers, API endpoints, or UI components in a desktop or mobile application.</li>
-    </ol>
 
-    <h2>Project Structure</h2>
+        1-Domain Layer: Contains the core business logic and domain entities of the application. It is independent of any external frameworks or libraries
+        2-Application Layer:Implements use cases and orchestrates the flow of data between the domain layer and the infrastructure layer. It is responsible for business logic implementation and interacts with external systems via interfaces.
+       3-Infrastructure Layer:Provides implementations for interacting with external systems such as databases, web services, or external APIs. It contains concrete implementations of repositories, data access objects, and other infrastructure concerns.
+       4-Presentation Layer: Handles user interface logic and presentation concerns. This can include web controllers, API endpoints, or UI components in a desktop or mobile application.
+   
 
-    <pre>
+Project Structure
+
+  
 clean-architecture-project/
 │
 ├── src/
@@ -39,12 +39,11 @@ clean-architecture-project/
 │   ├── ArchitectureDiagram/
 │   └── APIReference/
 └── README.md
-    </pre>
+ 
 
-    <h2>Getting Started</h2>
+    <h2>Getting Started
 
-    <ol>
-        <li><strong>Clone the Repository:</strong> 
+    <strong>Clone the Repository:</strong> 
             <pre>git clone https://github.com/yourusername/clean-architecture-project.git</pre>
         </li>
         <li><strong>Install Dependencies:</strong> 
