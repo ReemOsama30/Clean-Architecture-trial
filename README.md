@@ -32,7 +32,7 @@ clean-architecture-project/
 Getting Started
 
 1. Clone the Repository: 
-   git clone https://github.com/yourusername/clean-architecture-project.git
+   git clone https://github.com/ReemOsama30/Clean-Architecture-trial.git
    
 2. Install Dependencies: 
    cd clean-architecture-project
@@ -41,19 +41,12 @@ Getting Started
 3. Build the Project: 
    dotnet build
    
-4. Run Tests: 
-   dotnet test
-   
-5. Run the Application: 
+4. Run the Application: 
    dotnet run --project src/Presentation/Presentation.csproj
    
-6. Access the Application: 
-   Open your web browser and navigate to http://localhost:5000 to access the application.
 
-Additional Documentation
 
-- Architecture Diagrams: Contains visual representations of the project's architecture and component interactions.
-- API Reference: Detailed documentation for the application's API endpoints and usage instructions.
+
 
 Contributing
 
