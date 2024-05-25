@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Architecture Project README</title>
-</head>
-<body>
-    <h1>Clean Architecture Project README</h1>
+Clean Architecture Project README
 
-    <p>This repository contains a project built using the Clean Architecture pattern. Clean Architecture is an architectural approach that promotes separation of concerns and maintainability by structuring applications into distinct layers with well-defined responsibilities.</p>
+This repository contains a project built using the Clean Architecture pattern. Clean Architecture is an architectural approach that promotes separation of concerns and maintainability by structuring applications into distinct layers with well-defined responsibilities.
 
-    <h2>Overview</h2>
+Overview
 
-    <p>The project is structured into several layers, each with its own set of responsibilities:</p>
+The project is structured into several layers, each with its own set of responsibilities:
 
-    <ol>
-        <li><strong>Domain Layer:</strong> Contains the core business logic and domain entities of the application. It is independent of any external frameworks or libraries.</li>
-        <li><strong>Application Layer:</strong> Implements use cases and orchestrates the flow of data between the domain layer and the infrastructure layer. It is responsible for business logic implementation and interacts with external systems via interfaces.</li>
-        <li><strong>Infrastructure Layer:</strong> Provides implementations for interacting with external systems such as databases, web services, or external APIs. It contains concrete implementations of repositories, data access objects, and other infrastructure concerns.</li>
-        <li><strong>Presentation Layer:</strong> Handles user interface logic and presentation concerns. This can include web controllers, API endpoints, or UI components in a desktop or mobile application.</li>
-    </ol>
+1. Domain Layer: Contains the core business logic and domain entities of the application. It is independent of any external frameworks or libraries.
+2. Application Layer: Implements use cases and orchestrates the flow of data between the domain layer and the infrastructure layer. It is responsible for business logic implementation and interacts with external systems via interfaces.
+3. Infrastructure Layer: Provides implementations for interacting with external systems such as databases, web services, or external APIs. It contains concrete implementations of repositories, data access objects, and other infrastructure concerns.
+4. Presentation Layer: Handles user interface logic and presentation concerns. This can include web controllers, API endpoints, or UI components in a desktop or mobile application.
 
-    <h2>Project Structure</h2>
+Project Structure
 
-    <pre>
 clean-architecture-project/
 │
 ├── src/
@@ -39,52 +28,37 @@ clean-architecture-project/
 │   ├── ArchitectureDiagram/
 │   └── APIReference/
 └── README.md
-    </pre>
 
-    <h2>Getting Started</h2>
+Getting Started
 
-    <ol>
-        <li><strong>Clone the Repository:</strong> 
-            <pre>git clone https://github.com/yourusername/clean-architecture-project.git</pre>
-        </li>
-        <li><strong>Install Dependencies:</strong> 
-            <pre>cd clean-architecture-project
-dotnet restore</pre>
-        </li>
-        <li><strong>Build the Project:</strong> 
-            <pre>dotnet build</pre>
-        </li>
-        <li><strong>Run Tests:</strong> 
-            <pre>dotnet test</pre>
-        </li>
-        <li><strong>Run the Application:</strong> 
-            <pre>dotnet run --project src/Presentation/Presentation.csproj</pre>
-        </li>
-        <li><strong>Access the Application:</strong> 
-            <p>Open your web browser and navigate to <a href="http://localhost:5000">http://localhost:5000</a> to access the application.</p>
-        </li>
-    </ol>
+1. Clone the Repository: 
+   git clone https://github.com/yourusername/clean-architecture-project.git
+   
+2. Install Dependencies: 
+   cd clean-architecture-project
+   dotnet restore
+   
+3. Build the Project: 
+   dotnet build
+   
+4. Run Tests: 
+   dotnet test
+   
+5. Run the Application: 
+   dotnet run --project src/Presentation/Presentation.csproj
+   
+6. Access the Application: 
+   Open your web browser and navigate to http://localhost:5000 to access the application.
 
-    <h2>Additional Documentation</h2>
+Additional Documentation
 
-    <ul>
-        <li><strong>Architecture Diagrams:</strong> Contains visual representations of the project's architecture and component interactions.</li>
-        <li><strong>API Reference:</strong> Detailed documentation for the application's API endpoints and usage instructions.</li>
-    </ul>
+- Architecture Diagrams: Contains visual representations of the project's architecture and component interactions.
+- API Reference: Detailed documentation for the application's API endpoints and usage instructions.
 
-    <h2>Contributing</h2>
+Contributing
 
-    <p>Contributions are welcome! Please read the <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> file for guidelines.</p>
+Contributions are welcome! Please read the CONTRIBUTING.md file for guidelines.
 
-    <h2>License</h2>
+License
 
-    <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-</body>
-</html>
-
-
-    <h2>License</h2>
-
-    <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-</body>
-</html>
+This project is licensed under the MIT License.
