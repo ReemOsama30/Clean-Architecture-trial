@@ -1,4 +1,5 @@
-﻿using Clean_Architecture.Application.DTOs;
+﻿using AutoMapper;
+using Clean_Architecture.Application.DTOs;
 using Clean_Architecture.Application.Interfaces;
 using Clean_Architecture.core.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,12 @@ namespace Clean_Architecture.APIs.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IRepository<product> _productRepository;
+        private readonly IMapper mapper;
 
-        public ProductController(IRepository<product> productRepo)
+        public ProductController(IRepository<product> productRepo,IMapper mapper)
         {
             _productRepository = productRepo;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -41,13 +44,9 @@ namespace Clean_Architecture.APIs.Controllers
         {
             if (ModelState.IsValid)
             {
-                var product = new product
-                {
-                    name = newProduct.name,
-                    description = newProduct.description,
-                    price = newProduct.price
-                    ,categoryID = newProduct.categoryID
-                };
+                product product =this.mapper.Map<product>(newProduct);
+
+
 
 
                 _productRepository.insert(product);

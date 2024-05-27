@@ -4,6 +4,7 @@ using Clean_Architecture.Infrastructure.DbContext;
 using Clean_Architecture.Application.Interfaces;
 using Clean_Architecture.core.Entities;
 using Clean_Architecture.Infrastructure.Repositories;
+using Clean_Architecture.Application.Mapper;
 
 namespace Clean_Architecture.APIs
 {
@@ -20,7 +21,7 @@ namespace Clean_Architecture.APIs
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IRepository<product>, Repository<product>>();
-
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
             builder.Services.AddScoped<IRepository<category>, Repository<category>>();
             builder.Services.AddDbContext<ApplicationDbContext>(Options => {
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
